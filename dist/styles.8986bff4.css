@@ -1,0 +1,61 @@
+h1 {
+    color:green
+}
+
+.blue{
+    color:blue;
+    font-size: larger;
+}
+
+
+.box {
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    margin: 50px;
+    border: 5px dotted yellow ;
+    background-color: green ;
+
+}
+
+#para-1 {
+    font-family: 'Courier New';
+    font-style: italic;
+    color: blueviolet;
+    font-stretch:condensed;
+}
+
+
+
+input:focus{
+    background: gold;
+}
+
+input:disabled{
+    background: gold;
+}
+
+input:checked{
+    background: gold;
+}
+/* Psuedo */
+ul>li:hover{
+    background: grey;
+}
+
+li:first-child{
+    color: green;
+}
+
+li:last-child{
+    color: lightcoral;
+}
+
+li:nth-child(2){
+    color: rgb(202, 62, 183);
+}
+li:not(.green){
+    background-color: yellow;
+}
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */

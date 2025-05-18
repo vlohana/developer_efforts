@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script defer src="./customElement-lifecycle/HelloWorld.js"> </script>
+    <script defer src="./customElement-lifecycle/CountElemLifeCycle.js"> </script>
+    <script defer src="./customElement-lifecycle/CountElemLifeCycle-v2.js"> </script>
+    <script defer src="./templates/TemplateExample.js"> </script>
+    <script defer src="./shadowDom/ShadowExample.js"></script>
+</head>
+
+<body>
+    <div>Web Component Hello world</div>
+    <hello-world name="somename">Hello</hello-world>
+    <count-element-life-cycle initialvalue="1" steps='1'></count-element-life-cycle>
+    <template>
+        Hello Vinod
+    </template>
+    <!-- Not added in head as head is loaded first and template will not be found -->
+    <!-- include script below so that template could be found -->
+    <script>
+        const template = document.querySelector('template');
+        const node = document.importNode(template.content, true);
+        document.body.appendChild(node)
+    </script>
+    <!-- <template-example></template-example> -->
+    <div>
+        <button style="position: relative; color: rgb(129, 95, 160);">Outside</button>
+    </div>
+    <div>
+        <todo-list-example>Todo 1 <span slot="description">todo item 1...</span></todo-list-example>
+        <todo-list-example>Todo 2 </todo-list-example>
+        <todo-list-example>Todo 3 </todo-list-example>
+        <todo-list-example>Todo 4 <span slot="description">todo item 4...</span></todo-list-example>
+
+    </div>
+</body>
+
+</html>

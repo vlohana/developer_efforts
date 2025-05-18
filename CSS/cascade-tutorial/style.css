@@ -1,0 +1,31 @@
+/* Don't change the existing CSS. */
+
+#outer-box{
+  border: 10px solid black;
+  background-color: teal;
+  /* padding: 10px; */
+}
+.box {
+  background-color: blue;
+  padding: 10px;
+  /* border: 1px solid white ; */
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-size: 14pt; */
+}
+
+.inner-box{
+   background-color: red;
+}
+.inner-box p{
+  color: white;
+}
+
+/* .white-text {
+  color: white;
+} */
+
+p {
+  color: rgba(239, 239, 3, 0.997);
+  margin: 0;
+  padding: 0;
+}

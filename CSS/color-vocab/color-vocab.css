@@ -1,0 +1,47 @@
+/* * {
+    background-color: red;
+} */
+
+#red{
+    color:red
+}
+#blue {
+    color: blue;
+}
+#orange{
+    color: orange;
+}
+
+#green{
+    color:green
+}
+#yellow{
+    color: yellow;
+}
+
+body {
+    font-size: 16pt;
+}
+
+.goog-font-family {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: green;
+  }
+  
+
+h2.color-title {
+font-weight: normal;
+/* font-size: 20px; */ /*0.26mm*/
+/* font-size: 18pt; /*0.35 mm used in msword */
+/* font-size: 1em; inherit from the parent */
+font-size: 1rem ;  /* inherit Root em of the element */
+font-family: Arial, Helvetica, sans-serif;
+/* text-align: ; */
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}

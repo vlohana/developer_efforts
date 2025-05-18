@@ -1,0 +1,51 @@
+
+.meme-container{
+    /* height: 500px; */
+    width: 50%;
+    padding: 5px;
+    /* border: 5px solid; */    
+    margin-top: 20px;
+    margin-left: 25%;
+    /* background-color: rgb(218, 23, 23); */
+    /* margin: auto; */
+}
+img {
+    /* height: 400px; */
+    width: 100%;
+    padding: 5px;
+    border: 5px solid white;
+}
+.meme-title{
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    font-family: "Libre Baskerville", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 3em;
+    text-transform:uppercase ;
+    text-decoration: double;
+    /* padding: ; */
+}
+.meme-quote{
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+    margin: 0;
+    font-size: smaller;
+    font-style: italic;
+}
+li {
+    color:green
+}
+li.li-class {
+    color: yellow;
+}
+li[draggable] {
+    color: white;
+}
+li#id-1 {
+    color: rgb(237, 11, 11);
+}
+

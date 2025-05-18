@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+    <h1 id="h10">Browsers API </h1>
+    <p id="demo"></p>
+    <div>
+        <form>
+            <input type="button" value="open window" onclick="openWindow()" />
+            <input type="text" name="input-field" value="" placeholder="DummyPlaceholder" />
+        </form>
+        <div id="window-dimensions">
+            <p id="height"></p>
+            <p id="width"></p>
+        </div>
+        <div id="hoverTest">
+            <p onmouseover="changeTextOnHover()" onmouseout="changeToOriginal()">HoverMe</p>
+        </div>
+
+    </div>
+
+    <script>
+        const hoverElement = document.querySelector('#hoverTest>p');
+
+        function changeToOriginal() {
+            hoverElement.textContent = 'HoverMe';
+            hoverElement.style.color = 'black'
+            hoverElement.style.background='white'
+        }
+        function changeTextOnHover() {
+            hoverElement.textContent = 'ChangedText...On Hover';
+            hoverElement.style.color = "green"
+            hoverElement.style.background='yellow'
+        }
+        function openWindow() {
+            window.open(`https://www.google.com`)
+        }
+        let dimensions = document.getElementById("window-dimensions");
+        dimensions.childNodes[0].textContent = 'height: ' + window.innerHeight
+        dimensions.childNodes[1].textContent = "width: " + window.innerWidth
+        document.getElementsByTagName('form')[0].lastElementChild.placeholder = 'Vikki'
+    </script>
+</body>
+
+</html>

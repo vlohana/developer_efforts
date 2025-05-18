@@ -1,0 +1,24 @@
+/* Write your code here: */
+
+/* to group selector we use comma */
+h1,h2 {
+    color:blueviolet
+}
+
+/* child selector */
+.box>p {
+    color: aqua;
+}
+
+/* desendant selector using "space" */
+.box li {
+    color: blue;
+}
+/* chaining elements */
+li.done{
+    color: burlywood;
+}
+ul p.done {
+    color: red;
+    font-size: 0.5em;
+}
